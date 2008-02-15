@@ -5,6 +5,10 @@ One issue with the previous method is all velocities are considered, which can b
 
 = Using the Equation =
 
+This equation determines the weight for a given rank. _n_ is the number of items in the list and _r_ is the "aggressiveness" of the most recent estimates. See [RankSelectionWeights this page] for more information and to see how it was derived.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/7.png
+
 Previously we simply calculated the average velocity as follows:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Average.png

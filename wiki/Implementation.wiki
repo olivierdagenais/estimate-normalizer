@@ -1,0 +1,78 @@
+#summary Implementing estimate normalizers
+
+Now that we're all excited about estimate normalization, let's discuss actual implementation.
+
+
+= Prototype Run =
+
+Here is some input given to this prototype and its output.
+
+== Historical Data ==
+
+|| *Estimate* || *Actual* ||
+|| 11.6 || 16.9 ||
+|| 11.2 || 17.4 ||
+|| 12.5 || 17.6 ||
+|| 7.9 || 11.5 ||
+|| 10 || 15.8 ||
+|| 14.5 || 21 ||
+|| 13.1 || 20 ||
+|| 8.2 || 11.9 ||
+|| 5.6 || 8.4 ||
+|| 6.7 || 10.4 ||
+
+== Project Estimates ==
+
+|| *Estimate* ||
+|| 13.6 ||
+|| 13.2 ||
+|| 6.2 ||
+|| 5.6 ||
+|| 10.3 ||
+
+{{{
+=== Average ===
+User thinks it can be done in 48.900000 time units. Computer says 73.020492 time units.
+
+=== Weighted Average ===
+User thinks it can be done in 48.900000 time units. Computer says 80.868829 time units.
+
+=== Monte Carlo ===
+Done within 69.819177 time units: 0 %.
+Done within 70.479681 time units: 1 %.
+Done within 71.140186 time units: 5 %.
+Done within 71.800690 time units: 16 %.
+Done within 72.461194 time units: 35 %.
+Done within 73.121699 time units: 55 %.
+Done within 73.782203 time units: 73 %.
+Done within 74.442707 time units: 85 %.
+Done within 75.103212 time units: 94 %.
+Done within 75.763716 time units: 98 %.
+Done within 76.424220 time units: 100 %.
+
+=== Rank Selection Monte Carlo ===
+Done within 69.342471 time units: 0 %.
+Done within 70.047210 time units: 2 %.
+Done within 70.751948 time units: 9 %.
+Done within 71.456687 time units: 24 %.
+Done within 72.161425 time units: 41 %.
+Done within 72.866164 time units: 60 %.
+Done within 73.570903 time units: 78 %.
+Done within 74.275641 time units: 89 %.
+Done within 74.980380 time units: 95 %.
+Done within 75.685119 time units: 98 %.
+Done within 76.389857 time units: 100 %.
+}}}
+
+= Prototype Classes =
+
+These are the classes used in this prototype.
+
+http://estimate-normalizer.googlecode.com/svn/web/Classes.png
+
+The whole system can be simplified drastically, down to three classes, by implementing only one analyzer and getting rid of abstract classes, etc. The _Runner_ would typically be imbedded into another class. The _Estimate_ class would not necessarily be around, as long as we have some kind of data structure capable of holding estimates and actual for historical data, it should be sufficient.
+
+
+= Other Notes =
+
+Typically projects involve many persons working as teams. As everyone has their own unique velocities, tasks should be assigned to workers and only historical data for this worker should be used when adjusting their estimates.

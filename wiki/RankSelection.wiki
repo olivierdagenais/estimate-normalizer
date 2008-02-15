@@ -15,7 +15,11 @@ First we define the general structure of our function and set two constraints:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/1.png
 
-Let's start with the area under the curve.
+Let's start by solving for _k_ for later.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png
+
+Now moving on to the area under the curve.
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/3.png
 
@@ -23,8 +27,14 @@ Multiplying by two on both sides will rid us of the fraction.
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/4.png
 
-http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png
+We may now solve for _a_.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/45.png
+
+Now that we have _a_ we may express _k_ without _a_.
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/5.png
+
+Plugging _a_ and _k_ back into the generic function defined above gives us this:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png

@@ -7,7 +7,7 @@ One issue with the previous method is all velocities are considered, which can b
 
 = Details =
 
-
+The approach used in this prototype is to sort the estimates by date and distribute weights such that more recent estimates have bigger weights than older ones. After sorting, the most recent estimate should be on top of the list with a rank of 1 and the oldest at the bottom, with a rank of _n_. Let's define a function that maps a rank to a weight and let's go one step further by normalizing it such that the area under the curve from _0_ to _n-1_ is 1. The function can then also be seen as the probability a given member gets selected out of the whole list. This is called _rank selection_.
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/1.png
 

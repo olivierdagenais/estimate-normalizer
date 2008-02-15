@@ -37,7 +37,7 @@ Plugging _a_ and _k_ back into the generic function defined above gives us this:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png
 
-You may see this in code [http://code.google.com/p/estimate-normalizer/source/browse/trunk/src/analysis/Analyzer.java#36 here]
+You may see this in code [http://code.google.com/p/estimate-normalizer/source/browse/trunk/src/analysis/Analyzer.java#36 here].
 
 = What it looks like =
 
@@ -59,4 +59,12 @@ http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Graph.png
 
 = Using the Equation =
 
-...
+Previously we simply calculated the average velocity as follows:
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Average.png
+
+With the weight function, we do it this way instead:
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/WeightedAverage.png
+
+Note that we don't need to divide by anything as the weight function is already normalized, one of the nice things about enforcing the area under the curve to be one!

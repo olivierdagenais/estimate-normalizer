@@ -1,0 +1,41 @@
+#summary Using Monte-Carlo simulations to adjust estimates
+
+= Introduction =
+
+Determining an average velocity by which to adjust estimates is a great start, but averages are just averages: they don't give that much information and their margin of error can be huge. With well distributed data, normalizing estimates with an average velocity would still make half of your projects late! A simple addition could be to determine the worst and best case scenarios along with the average. This would give a better idea of what to expect, but we can still do better...
+
+There is a very useful statistical technique going by the name of _Monte Carlo_ that will come in really handy. I won't go over the details of Monte Carlo methods, but if you'd like to read on the theory, this Wikipedia [http://en.wikipedia.org/wiki/Monte_Carlo_method article] is a good start. What we'll do is simulate a project "randomly" based on historical estimate/actual data and analyze the various simulations.
+
+= Details =
+
+The goal of estimates in project management is determining the date by which a project should be completed. To do so we sum up the estimates on all tasks to be completed and in theory we get the completion date of everything as a whole. We've seen using an average velocity to adjust estimates is a good start, but that averages are not perfect. What information from previous estimate/actual data could be used to come up with useful and realistic information? How about all of it!
+
+Estimating project completion using the Monte Carlo method goes like this, assuming we have a list of tasks to complete and a list of estimate/actual data from past tasks (from any project):
+ # Pick the first project task
+ # Randomly select a previous velocity from the list of historical data
+ # Multiply the project task's estimate by the velocity
+ # Add the normalized task's estimate to a running sum
+ # Repeat steps 1-4 for every task of the project
+ # When done with all tasks, the running sum will hold an estimate for the whole project
+ # Repeat steps 1-6 several times (in the thousands), writing down the estimated project completion date for every simulation
+
+Once all simulations are complete, separate the time span into even regions. For each region determine the percentage of simulations that would be completed by this time. Here is an example which was obtained by simulating a thousand times estimates based on the estimate/actual presented earlier.
+
+|| *Date* || *Percentage* ||
+|| 69.825064 || 0 ||
+|| 70.505885 || 1 ||
+|| 71.186705 || 7 ||
+|| 71.867525 || 17 ||
+|| 72.548346 || 34 ||
+|| 73.229166 || 55 ||
+|| 73.909986 || 73 ||
+|| 74.590806 || 86 ||
+|| 75.271627 || 95 ||
+|| 75.952447 || 98 ||
+|| 76.633267 || 100 ||
+
+Graphing these points we get this
+
+http://estimate-normalizer.googlecode.com/svn/web/MonteCarloCompletion.png
+
+Such graphs are great, because they show the best case, worst case, average and everything in-between! For example to keep customers happy a company might decide to only use the 85% mark on project completion estimates. What about the 15% that will be delivered late? Well if they know in advance they should get their product on date X with a 85% confidence level it should be fine. It surely beats not adjusting estimates, which most likely would mean 90% and up of projects would be late or the average velocity adjustment which gives about 50%.

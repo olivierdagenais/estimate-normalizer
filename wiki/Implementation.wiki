@@ -76,3 +76,5 @@ The whole system can be simplified drastically, down to three classes, by implem
 = Other Notes =
 
 Typically projects involve many persons working as teams. As everyone has their own unique velocities, tasks should be assigned to workers and only historical data for this worker should be used when adjusting their estimates.
+
+Still scared by the theory behind the idea? Don't be! See this [http://code.google.com/p/estimate-normalizer/source/browse/web/MonteCarloReport.pl example Perl script] which implements the above Monte-Carlo reporting in 75 lines of code, 25 of which are data.

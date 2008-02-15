@@ -1,5 +1,7 @@
 #summary How the rank selection weights are derived
 
+[RankSelection PREVIOUS] | [TOC] | [MonteCarlo NEXT]
+
 = Deriving the Weights =
 
 The approach used in this prototype is to sort the estimates by date and distribute weights according to rank (i.e. the most recent has rank 1, the second 2 and the oldest _n_). Let's derive a function that maps rank to weight.
@@ -53,3 +55,5 @@ http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Graph.png
 || 7 || 0.0764 ||
 || 8 || 0.0625 ||
 || 9 || 0.0486 ||
+
+[RankSelection PREVIOUS] | [TOC] | [MonteCarlo NEXT]

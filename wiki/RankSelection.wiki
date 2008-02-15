@@ -15,11 +15,13 @@ First we define the general structure of our function and set two constraints:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/1.png
 
-http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png
+Let's start with the area under the curve.
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/3.png
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/4.png
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/5.png
 

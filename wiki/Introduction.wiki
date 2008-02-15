@@ -1,5 +1,7 @@
 #summary Introduction to the Estimate Normalizer project
 
+[TOC Table of Contents] | [RankSelection NEXT]
+
 Estimates on software development times are rarely accurate. They are usually precise, but inexact. After observing the phenomenon I determined my own estimates were true by multiplying them by 1.5; a task I think should take two days usually ends up taking three. This adjustment coefficient is called _velocity_. Everyone has their own unique velocity, you can't just take someone else's and expect your estimates to work out.
 
 An easy way to determine velocity is to note initial estimates and actual time taken. Once a couple data points have been collected, simple statistics will do the trick. Calculate the velocity of each estimate by dividing the actual by its estimate and then determine the average velocity for all estimates. Next time an estimate is given, multiply by that average velocity and it should be rather close to the actual! Let's do an example:
@@ -20,3 +22,5 @@ An easy way to determine velocity is to note initial estimates and actual time t
 There are other ways to analyze the collected data and other information can be extracted from it. The *purpose of this project* is to provide a working prototype of such algorithms to expose the theory and allow to easily implement functionality into other projects.
 
 If you were to stop reading now and use the above technique on your estimates, your projects could very possibly get finished on time and I would be glad to have helped. If you would like to learn more about estimate normalization techniques and this project, you are welcome to keep reading.
+
+[TOC Table of Contents] | [RankSelection NEXT]

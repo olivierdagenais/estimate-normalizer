@@ -1,11 +1,9 @@
 #summary Giving more importance to recent estimates
 
-= Introduction =
-
 One issue with the previous method is all velocities are considered, which can be problematic when methodologies change. Let's say for example a new tool was introduced to increase productivity. In the long term everyone will get work done faster, but until ramp-up on the tool is complete, developers will be slowed down. Preparing a schedule with all previous estimates will dampen the new tool's impact and the schedule will possibly be infeasible. This can be fixed by using a weighted average giving more importance to recent estimates.
 
 
-= Details =
+= Deriving the Weights =
 
 The approach used in this prototype is to sort the estimates by date and distribute weights according to rank (i.e. the most recent has rank 1, the second 2 and the oldest _n_). Let's derive a function that maps rank to weight.
 
@@ -38,3 +36,20 @@ http://estimate-normalizer.googlecode.com/svn/web/probability-equation/5.png
 Plugging _a_ and _k_ back into the generic function defined above gives us this:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png
+
+
+= What it looks like =
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Graph.png
+
+|| *x* || *y* ||
+|| 0 || 0.1736 ||
+|| 1 || 0.1597 ||
+|| 2 || 0.1458 ||
+|| 3 || 0.1319 ||
+|| 4 || 0.1181 ||
+|| 5 || 0.1042 ||
+|| 6 || 0.0903 ||
+|| 7 || 0.0764 ||
+|| 8 || 0.0625 ||
+|| 9 || 0.0486 ||

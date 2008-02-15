@@ -1,0 +1,55 @@
+#summary How the rank selection weights are derived
+
+= Deriving the Weights =
+
+The approach used in this prototype is to sort the estimates by date and distribute weights according to rank (i.e. the most recent has rank 1, the second 2 and the oldest _n_). Let's derive a function that maps rank to weight.
+
+First we define the general structure of our function and set two constraints:
+ * Have control over the probability ratio between the most recent and oldest member with _r_. For example setting _r=5_ means the most recent estimate will have a _5:1_ weight ratio against the oldest.
+ * The area under the curve should be _1_. This will be useful later when we use this function for probabilities.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/1.png
+
+Let's start by solving for _k_ for later.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png
+
+Now moving on to the area under the curve.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/3.png
+
+Multiplying by two on both sides will rid us of the fraction.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/4.png
+
+We may now solve for _a_.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/45.png
+
+Now that we have _a_ we may express _k_ without _a_.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/5.png
+
+Plugging _a_ and _k_ back into the generic function defined above gives us this:
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png
+
+You may see this in code [http://code.google.com/p/estimate-normalizer/source/browse/trunk/src/analysis/Analyzer.java#36 here].
+
+= What it looks like =
+
+Setting _n=10_ (the total number of estimates) and _r=5_ (the most recent having a 5:1 ratio against the oldest) we get this graph with these data points.
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Graph.png
+
+|| *x* || *y* ||
+|| 0 || 0.1736 ||
+|| 1 || 0.1597 ||
+|| 2 || 0.1458 ||
+|| 3 || 0.1319 ||
+|| 4 || 0.1181 ||
+|| 5 || 0.1042 ||
+|| 6 || 0.0903 ||
+|| 7 || 0.0764 ||
+|| 8 || 0.0625 ||
+|| 9 || 0.0486 ||

@@ -19,6 +19,8 @@ Let's start with the area under the curve.
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/3.png
 
+Multiplying by two on both sides will rid us of the fraction.
+
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/4.png
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png

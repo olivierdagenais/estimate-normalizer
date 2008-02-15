@@ -1,5 +1,7 @@
 #summary Giving more importance to recent estimates
 
+[Introduction] | [TOC Table of Contents] | [RankSelectionWeights NEXT]
+
 One issue with the previous method is all velocities are considered, which can be problematic when methodologies change. Let's say for example a new tool was introduced to increase productivity. In the long term everyone will get work done faster, but until ramp-up on the tool is complete, developers will be slowed down. Preparing a schedule with all previous estimates will dampen the new tool's impact and the schedule will possibly be infeasible. This can be fixed by using a weighted average giving more importance to recent estimates.
 
 
@@ -38,3 +40,5 @@ Let's apply this to the sample data from the introduction. We add the weights an
 ||       ||        ||          ||         || *SUM*    || 1.656 ||
 
 You may notice our weighted average velocity is higher than any of our velocities, which doesn't make much sense... This is due to the number of data points we're using, which gives a weight sum of about 1.1. The area under the curve really is 1, but due to our small number of data points it's not very precise. As we would add more data points their sum would converge to 1. This can be verified by integrating _f(x)_ and evaluating it at _n-1_ and _0_.
+
+[Introduction] | [TOC Table of Contents] | [RankSelectionWeights NEXT]

@@ -1,13 +1,22 @@
-#summary Giving more importance to recent estimates
+  #summary Giving more importance to recent estimates
 
 = Introduction =
 
-One issue with the previous method is all velocities are considered, which can be problematic when methodologies change. Let's say for example a new tool was introduced to increase productivity. In the long term everyone will get work done faster, but until ramp-up on the tool is complete, developers will be slowed down. Preparing a schedule with all previous estimates will dampen the new tool's impact and the schedule will possibly be infeasible. This can be fixed by using a weighted average giving more important to recent estimates.
+One issue with the previous method is all velocities are considered, which can be problematic when methodologies change. Let's say for example a new tool was introduced to increase productivity. In the long term everyone will get work done faster, but until ramp-up on the tool is complete, developers will be slowed down. Preparing a schedule with all previous estimates will dampen the new tool's impact and the schedule will possibly be infeasible. This can be fixed by using a weighted average giving more importance to recent estimates.
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/1.png
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/2.png
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/3.png
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/4.png
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/5.png
+
+http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png

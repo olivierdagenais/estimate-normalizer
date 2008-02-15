@@ -4,7 +4,7 @@
 
 Estimates on software development times are rarely accurate. They are usually precise, but inexact. After noticing the phenomenon I determined my own estimates were true by multiplying them by 1.5; a task I think should take two days usually ends up taking three. This adjustment coefficient is called _velocity_. Everyone has their own unique velocity, you can't just take someone else's and expect your estimates to work out.
 
-An easy way to determine velocity is to note initial estimates and actual time taken. Once a couple data points have been collected, simple statistics will do the trick. For each estimate and actual time, calculate the velocity (actual / estimate). Then determine the average of the velocities. Next time an estimate is given, multiply by that average velocity and it should be rather close to the actual! Let's do an example:
+An easy way to determine velocity is to note initial estimates and actual time taken. Once a couple data points have been collected, simple statistics will do the trick. Calculate the velocity of each estimate by dividing the actual by its estimate. Then determine the average velocity. Next time an estimate is given, multiply by that average velocity and it should be rather close to the actual! Let's do an example:
 
 || *Task* || *Estimate* || *Actual* || *Velocity* ||
 || 1 || 11.6 || 16.9 || 1.46 ||

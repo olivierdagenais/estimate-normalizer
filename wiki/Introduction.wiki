@@ -2,4 +2,18 @@
 
 = Introduction =
 
-Estimates on software development times are rarely accurate. They are usually precise, but inexact. After noticing the phenomenon I determined my own estimates were true by multiplying them 1.5; a task I think should take two days usually ends up taking three. I call this adjustment coefficient my _velocity_. Everyone has their own unique velocity, you can't just take some else's and expect your estimates to work out.
+Estimates on software development times are rarely accurate. They are usually precise, but inexact. After noticing the phenomenon I determined my own estimates were true by multiplying them 1.5; a task I think should take two days usually ends up taking three. I call this adjustment coefficient my _velocity_. Everyone has their own unique velocity, you can't just take someone else's and expect your estimates to work out.
+
+An easy way to determine velocity is to note initial estimates and actual time taken. Once a couple data points have been collected, simple statistics will do the trick. Let's do an example:
+
+|| *Task* || *Estimate* || *Actual* ||
+|| 1 || 11.627370979 || 10.598694079 ||
+|| 2 || 11.224044015 || 12.11983836 ||
+|| 3 || 12.507756812 || 12.154407321 ||
+|| 4 || 7.868743801 || 7.8297623926 ||
+|| 5 || 9.9770627799 || 9.367126898 ||
+|| 6 || 14.494142346 || 13.39286244 ||
+|| 7 || 13.050406677 || 12.877894729 ||
+|| 8 || 8.1850159788 || 8.4309122992 ||
+|| 9 || 5.5635564218 || 5.1192791935 ||
+|| 10 || 6.69278137 || 7.2197459619 ||

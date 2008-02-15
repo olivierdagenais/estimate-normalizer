@@ -68,3 +68,21 @@ With the weight function, we do it this way instead:
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/WeightedAverage.png
 
 Note that we don't need to divide by anything as the weight function is already normalized, one of the nice things about enforcing the area under the curve to be one!
+
+
+= An Example =
+
+Let's apply this to the sample data from the introduction.
+
+|| *Task* || *Estimate* || *Actual* || *Velocity* || *Weight* || *Velocity x Weight* ||
+|| 1 || 11.6 || 16.9 || 1.46 || 0.1736 || .253 ||
+|| 2 || 11.2 || 17.4 || 1.55 || 0.1597 || .248 ||
+|| 3 || 12.5 || 17.6 || 1.41 || 0.1458 || .206 ||
+|| 4 || 7.9 || 11.5 || 1.46 || 0.1319 || .193 ||
+|| 5 || 10 || 15.8 || 1.58 || 0.1181 || .187 ||
+|| 6 || 14.5 || 21 || 1.45 || 0.1042 || .151 ||
+|| 7 || 13.1 || 20 || 1.53 || 0.0903 || .138 ||
+|| 8 || 8.2 || 11.9 || 1.45 || 0.0764 || .111 ||
+|| 9 || 5.6 || 8.4 || 1.5 || 0.0625 || .094 ||
+|| 10 || 6.7 || 10.4 || 1.55 || 0.0486 || .075 ||
+||       ||        ||          ||         || *SUM*    || 1.656 ||

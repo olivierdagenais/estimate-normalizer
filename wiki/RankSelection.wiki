@@ -40,6 +40,8 @@ http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png
 
 = What it looks like =
 
+Setting _n=10_ (the total number of estimates) and _r=5_ (the most recent having a 5:1 ratio against the oldest) we get this graph with these data points.
+
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Graph.png
 
 || *x* || *y* ||
@@ -53,3 +55,7 @@ http://estimate-normalizer.googlecode.com/svn/web/probability-equation/Graph.png
 || 7 || 0.0764 ||
 || 8 || 0.0625 ||
 || 9 || 0.0486 ||
+
+= Using the Equation =
+
+...

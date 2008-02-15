@@ -7,14 +7,14 @@ Estimates on software development times are rarely accurate. They are usually pr
 An easy way to determine velocity is to note initial estimates and actual time taken. Once a couple data points have been collected, simple statistics will do the trick. For each estimate and actual time, calculate the velocity (actual / estimate). Then determine the average of the velocities. Next time an estimate is given, multiply by that average velocity and it should be rather close to the actual! Let's do an example:
 
 || *Task* || *Estimate* || *Actual* || *Velocity* ||
-|| 1 || 11.627370979 || 16.793177104 || 1.4442798062 ||
-|| 2 || 11.224044015 || 15.833780973 || 1.4107019673 ||
-|| 3 || 12.507756812 || 18.360945046 || 1.4679646656 ||
-|| 4 || 7.868743801 || 11.662541631 || 1.4821351319 ||
-|| 5 || 9.9770627799 || 14.486690076 || 1.4519994908 ||
-|| 6 || 14.494142346 || 20.801620047 || 1.4351742622 ||
-|| 7 || 13.050406677 || 20.53904649 || 1.5738242492 ||
-|| 8 || 8.1850159788 || 11.984142167 || 1.4641562335 ||
-|| 9 || 5.5635564218 || 8.1996654884 || 1.4738172612 ||
-|| 10 || 6.69278137 || 9.9753528812 || 1.4904644765 ||
-||   ||   ||   *Average Velocity* || 1.4673721413 ||
+|| 1 || 11.6 || 16.9 || 1.46 ||
+|| 2 || 11.2 || 17.4 || 1.55 ||
+|| 3 || 12.5 || 17.6 || 1.41 ||
+|| 4 || 7.9 || 11.5 || 1.46 ||
+|| 5 || 10 || 15.8 || 1.58 ||
+|| 6 || 14.5 || 21 || 1.45 ||
+|| 7 || 13.1 || 20 || 1.53 ||
+|| 8 || 8.2 || 11.9 || 1.45 ||
+|| 9 || 5.6 || 8.4 || 1.5 ||
+|| 10 || 6.7 || 10.4 || 1.55 ||
+||   ||   ||   *Average Velocity* || 1.49 ||

@@ -37,6 +37,7 @@ Plugging _a_ and _k_ back into the generic function defined above gives us this:
 
 http://estimate-normalizer.googlecode.com/svn/web/probability-equation/6.png
 
+You may see this in code [http://code.google.com/p/estimate-normalizer/source/browse/trunk/src/analysis/Analyzer.java#36 here]
 
 = What it looks like =
 

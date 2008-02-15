@@ -1,6 +1,6 @@
 #summary Introduction to the Estimate Normalizer project
 
-[TOC Table of Contents] | [RankSelection NEXT]
+[TOC] | [RankSelection NEXT]
 
 Estimates on software development times are rarely accurate. They are usually precise, but inexact. After observing the phenomenon I determined my own estimates were true by multiplying them by 1.5; a task I think should take two days usually ends up taking three. This adjustment coefficient is called _velocity_. Everyone has their own unique velocity, you can't just take someone else's and expect your estimates to work out.
 
@@ -23,4 +23,4 @@ There are other ways to analyze the collected data and other information can be 
 
 If you were to stop reading now and use the above technique on your estimates, your projects could very possibly get finished on time and I would be glad to have helped. If you would like to learn more about estimate normalization techniques and this project, you are welcome to keep reading.
 
-[TOC Table of Contents] | [RankSelection NEXT]
+[TOC] | [RankSelection NEXT]

@@ -1,0 +1,3 @@
+#summary Giving more importance to recent estimates with Monte Carlo simulations
+
+Just as we gave more weight to more recent estimates with average velocities, we can pick with more probability newer estimates than older ones when running the Monte Carlo simulations. The same equation can be used, which is why we had to ensure the area under the curve is 1: it then becomes a probability function!

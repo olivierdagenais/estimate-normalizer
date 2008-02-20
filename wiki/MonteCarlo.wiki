@@ -38,7 +38,7 @@ Graphing these points we get this
 
 http://estimate-normalizer.googlecode.com/svn/web/MonteCarloCompletion.png
 
-Graphs like this are great, because they show the best case, worst case, average and everything in-between! It should be interpreted as follows: 86% of simulations were completed after 74.6 time units. Now you just have to convince yourself Monte Carlo methods are valid and that the actual implementation can be treated just the same as a simulation. 
+Graphs like this are great, because they show the best case, worst case, average and everything in-between! It should be interpreted as follows: 86% of simulations were completed after 74.6 time units. Now you just have to convince yourself Monte Carlo methods are valid and that simulations are good approximations of real workers doing real work.
 
 To keep customers happy a company might decide to only use the 85% mark on project completion estimates. What about the 15% that will be delivered late? Well if they know in advance they should get their product on date X with a 85% confidence level it should be fine. It surely beats not adjusting estimates, which most likely would mean 90% and up of projects would be late or the average velocity adjustment which gives about 50%.
 

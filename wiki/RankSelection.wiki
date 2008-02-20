@@ -2,7 +2,7 @@
 
 [Introduction PREVIOUS] | [TOC] | [MonteCarlo NEXT]
 
-One issue with the previous method is all velocities are considered, which can be problematic when methodologies change. Let's say for example a new tool was introduced to increase productivity. In the long term everyone will get work done faster, but until ramp-up on the tool is complete, developers will be slowed down. Preparing a schedule with all previous estimates will dampen the new tool's impact and the schedule will possibly be infeasible. This can be fixed by using a weighted average giving more importance to recent estimates.
+One issue with the previous method is all velocities are considered, which can be problematic when methodologies change. Let's say for example a new tool was introduced to increase productivity. In the long term everyone will get work done faster, but until ramp-up on the tool is complete, developers will be slowed down. Preparing a schedule with all previous estimates will dampen the new tool's impact (by averaging down its effect) and the schedule will possibly be infeasible. This can be fixed by using a weighted average giving more importance to recent estimates.
 
 
 = Using the Equation =

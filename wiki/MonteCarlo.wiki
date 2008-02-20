@@ -14,7 +14,7 @@ Estimating project completion using the Monte Carlo method goes like this, assum
  # Pick the first project task
  # Randomly select a previous velocity from the list of historical data
  # Multiply the project task's estimate by the velocity
- # Add the normalized task's estimate to a running sum
+ # Add the normalized task's estimate to a running sum (i.e. sum += estimate * randomVelocity)
  # Repeat steps 1-4 for every task of the project
  # When done with all tasks, the running sum will hold an estimate for the whole project
  # Repeat steps 1-6 several times (in the thousands), writing down the estimated project completion date for every simulation

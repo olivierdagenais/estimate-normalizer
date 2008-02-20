@@ -4,7 +4,7 @@
 
 Determining an average velocity by which to adjust estimates is a great start, but averages are just averages: they don't give that much information and their margin of error can be huge. With well distributed data, normalizing estimates with an average velocity would still make half of your projects late! A simple addition could be to determine the worst and best case scenarios along with the average. This would give a better idea of what to expect, but we can still do better...
 
-There is a very useful statistical technique going by the name of _Monte Carlo_ that will come in really handy. I won't go over the details of Monte Carlo methods, but if you'd like to read on the theory, [http://en.wikipedia.org/wiki/Monte_Carlo_method this Wikipedia article] is a good start. What we'll do is simulate a project "randomly" based on historical estimate/actual data and analyze the various simulations.
+There is a very useful statistical technique going by the name of _Monte Carlo_ that will come in really handy. I won't go over the details of Monte Carlo methods, but if you'd like to read on the theory, [http://en.wikipedia.org/wiki/Monte_Carlo_method this Wikipedia article] is a good start. What we'll do is simulate "randomly" workers estimating work with their actual time, based on historical estimate/actual data and analyze the outcome of the various simulations.
 
 = Details =
 

@@ -8,7 +8,7 @@ There is a very useful statistical technique going by the name of _Monte Carlo_ 
 
 = Details =
 
-The goal of estimates in project management is determining the date by which a project should be completed. To do so we sum up the estimates on all tasks to be completed and in theory we get the completion date of everything as a whole. We've seen using an average velocity to adjust estimates is a good start, but that averages are not perfect. What information from previous estimate/actual data could be used to come up with useful and realistic information? How about all of it!
+The goal of estimates in project management is determining the date by which a project should be completed. To do so we sum up the estimates on all tasks to be completed and in theory we get the completion date of everything as a whole; in practice estimates are always off the mark for tons of different reasons. We've seen using an average velocity to adjust estimates is a good start, but that averages are not perfect. What information from previous estimate/actual data could be used to come up with useful and realistic information? How about all of it!
 
 Estimating project completion using the Monte Carlo method goes like this, assuming we have a list of tasks to complete and a list of estimate/actual data from past tasks (from any project):
  # Pick the first project task

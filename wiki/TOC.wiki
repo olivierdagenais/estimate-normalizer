@@ -4,4 +4,5 @@
  * [RankSelection Giving more importance to recent estimates]
    * [RankSelectionWeights How the rank selection weights are derived]
  * [MonteCarlo Using Monte-Carlo simulations to adjust estimates]
+ * [RankSelectionMonteCarlo Giving more importance to recent estimates with Monte Carlo simulations]
  * [Implementation Implementing estimate normalizers]
